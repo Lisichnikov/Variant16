@@ -25,9 +25,6 @@ namespace Variant16
             Array.ForEach(sorted, Console.WriteLine);
                 Console.WriteLine("------------------------------------------------");
 
-            
-
-
         }
     }
 }

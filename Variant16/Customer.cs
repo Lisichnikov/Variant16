@@ -36,7 +36,7 @@ namespace Variant16
         {
             return familyname + ", " + name + ", " + surname + ", " + address + ", " + phonenumber + ", " + cardnumber + ", " +bankaccountnumber;
         }
-        public override string Intertval()
+        public string Intertval()
         {
             int resault = bankaccountnumber;
             if (resault > 0000000232146000 && resault < 6800950078003400)
