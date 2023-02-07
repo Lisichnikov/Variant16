@@ -32,6 +32,19 @@ namespace Variant16
             this.cardnumber = cardnumber;
             this.bankaccountnumber = bankaccountnumber;
         }
+        public override string ToString()
+        {
+            return familyname + ", " + name + ", " + surname + ", " + address + ", " + phonenumber + ", " + cardnumber + ", " +bankaccountnumber;
+        }
+        public override string Intertval()
+        {
+            int resault = bankaccountnumber;
+            if (resault > 0000000232146000 && resault < 6800950078003400)
+            {
+                resault = bankaccountnumber;
+            }
+            return familyname + ", " + name + ", " + surname + ", " + address + ", " + phonenumber + ", " + cardnumber + ", " + bankaccountnumber;
+        }
     }
 }
 
