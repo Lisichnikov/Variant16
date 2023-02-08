@@ -17,14 +17,26 @@ namespace Variant16
                 new Customer ("Тупицин", "Илья", "Алексеевич", "Кургановка", 89560234501, 6700880823043498, 0003),
                 new Customer ("Панькин", "Данила", "Сергеевич", "Kamenka", 89876590123, 4500300020207856, 0004)
             };
-            
+
 
             var sorted = customers.OrderBy(ob => ob.familyname).ToArray();
-                Console.WriteLine("Привет дружище, вот тебе список покупателей в алфавитном порядке: " );
-                Console.WriteLine("------------------------------------------------");
+            Console.WriteLine("Привет дружище, вот тебе список покупателей в алфавитном порядке: ");
+            Console.WriteLine("------------------------------------------------");
             Array.ForEach(sorted, Console.WriteLine);
-                Console.WriteLine("------------------------------------------------");
+            Console.WriteLine("------------------------------------------------");
 
+            Console.WriteLine(" ");
+
+            Console.WriteLine("А вот тебе список покупателей, номер кредитной карточки которых находится в заданном интервале: ");
+            Console.WriteLine("------------------------------------------------");
+            bool ex = false;
+            foreach (Customer c in customers)
+                if (c.cardnumber > 0098003456001200 && c.cardnumber < 8890440022004400)
+                {
+                    Console.WriteLine(c.ToString());
+                    ex = true;
+                }
+            Console.WriteLine("------------------------------------------------");
         }
     }
 }
